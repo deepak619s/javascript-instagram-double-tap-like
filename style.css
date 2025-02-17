@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Slab", serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.main-div{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-div h1{
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.clickCount{
+    color: #ee5253;
+}
+
+.inner-div img{
+    width: 40rem;
+    height: 60rem;
+    box-shadow: 0 1rem 2rem .8rem rgba(0, 0, 0, 0.2);
+    position: relative;
+    cursor: pointer;
+}
+
+.inner-div i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    animation: heartGrow 0.8s linear;
+    -webkit-animation: heartGrow 0.8s linear;
+}
+
+@keyframes heartGrow{
+    100%{
+        transform: scale(8);
+        opacity: 0;
+    }
+}
